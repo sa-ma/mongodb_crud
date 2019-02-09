@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Variables */
+:root {
+  --bg-color: #f5f5f5;
+  --bg-btn: #4527a0;
+  --bg-btn-hover: #311b92;
+  --btn-padding: 10px 20px;
+  --border: 1px solid #311b92;
+  --border-radius: 5px;
+  --text-light: #fafafa;
+  --text-dark: #212121;
+}
+
+body {
+  background-color: var(--bg-btn-hover);
+}
+.container {
+  width: 40%;
+  margin: 4rem auto;
+  padding: 3rem;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background: var(--bg-color);
+}
+.todoform {
+  width: 100%;
+}
+input {
+  border: var(--border);
+  box-shadow: 0 0 0 var(--bg-btn-hover);
+}
+.textfield {
+  width: 80%;
+  padding: 6px 3px;
+  font-size: 18px;
+  color: var(--text-dark);
+}
+.btn {
+  padding: var(--btn-padding);
+  border: none;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin: 2px;
+  color: var(--text-light);
+}
+.btn:hover {
+  background-color: var(--bg-btn-hover);
+  cursor: pointer;
+}
+.delete {
+  background-color: #d50000;
+}
+.edit {
+  background-color: #0d47a1;
+}
+.submit {
+  background: var(--bg-btn);
+  color: var(--text-light);
+  border: var(--border-radius);
+}
+
+.todo-results {
+  margin-top: 16px;
+}
+.todo-results ul li {
+  list-style: none;
+}
+.grid {
+  width: 100%;
+  display: flex;
+}
+.grid-equal {
+  width: 33.33%;
+  border: var(--border);
+  padding: 8px;
+}
